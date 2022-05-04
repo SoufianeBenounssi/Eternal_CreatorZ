@@ -1,0 +1,497 @@
+/* ------------------------------------------------------------------- 
+ * ## fonts
+ * ------------------------------------------------------------------- */
+ @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap");
+ :root {
+     --font-1: "Inter", sans-serif;
+     --font-2: "IBM Plex Serif", serif;
+     /* monospace
+      */
+     --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+ }
+/* ------------------------------------------------------------------- 
+ * ## grid
+ * ------------------------------------------------------------------- */
+
+ .row .one         { width: 8.33333%; }
+ .row .two         { width: 16.66667%; }
+ .row .three       { width: 25%; }
+ .row .four        { width: 33.33333%; }
+ .row .five        { width: 41.66667%; }
+ .row .six         { width: 50%; }
+ .row .seven       { width: 58.33333%; }
+ .row .eight       { width: 66.66667%; }
+ .row .nine        { width: 75%; }
+ .row .ten         { width: 83.33333%; }
+ .row .eleven      { width: 91.66667%; }
+ .row .twelve      { width: 100%; }
+ 
+
+ .row {
+    width: 92%;
+    max-width: var(--width-grid-max);
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+}
+
+.row .row {
+    width: auto;
+    max-width: none;
+    margin-left: calc(var(--gutter-lg) * -1);
+    margin-right: calc(var(--gutter-lg) * -1);
+}
+
+
+
+/* ------------------------------------------------------------------- 
+ * ## vertical spacing and typescale
+ * ------------------------------------------------------------------- */
+ :root {
+
+    /* spacing
+     * base font size: 18px 
+     * vertical space unit : 32px
+     */
+    --base-size: 62.5%;
+    --base-font-size: 1.8rem;
+    --space: 3.2rem;
+
+    /* vertical spacing 
+     */
+    --vspace-0_125: calc(0.125 * var(--space));
+    --vspace-0_25 : calc(0.25 * var(--space));
+    --vspace-0_5  : calc(0.5 * var(--space));
+    --vspace-0_75 : calc(0.75 * var(--space));
+    --vspace-0_875: calc(0.875 * var(--space));
+    --vspace-1    : calc(var(--space));
+    --vspace-1_25 : calc(1.25 * var(--space));
+    --vspace-1_5  : calc(1.5 * var(--space));
+    --vspace-1_75 : calc(1.75 * var(--space));
+    --vspace-2    : calc(2 * var(--space));
+    --vspace-2_5  : calc(2.5 * var(--space));
+    --vspace-3    : calc(3 * var(--space));
+    --vspace-3_5  : calc(3.5 * var(--space));
+    --vspace-4    : calc(4 * var(--space));
+    --vspace-4_5  : calc(4.5 * var(--space));
+    --vspace-5    : calc(5 * var(--space));
+
+    
+    /* type scale
+     * ratio 1:2 | base: 18px
+     * -------------------------------------------------------
+     *
+     * --text-display-3 = (77.40px)
+     * --text-display-2 = (64.50px)
+     * --text-display-1 = (53.75px)
+     * --text-xxxl      = (44.79px)
+     * --text-xxl       = (37.32px)
+     * --text-xl        = (31.10px)
+     * --text-lg        = (25.92px)
+     * --text-md        = (21.60px)
+     * --text-size      = (18.00px) BASE
+     * --text-sm        = (15.00px)
+     * --text-xs        = (12.50px)
+     *
+     * -------------------------------------------------------
+     */
+     --text-scale-ratio: 1.2;
+     --text-size       : var(--base-font-size);
+     --text-xs         : calc((var(--text-size) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+     --text-sm         : calc(var(--text-xs) * var(--text-scale-ratio));
+     --text-md         : calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+     --text-lg         : calc(var(--text-md) * var(--text-scale-ratio));
+     --text-xl         : calc(var(--text-lg) * var(--text-scale-ratio));
+     --text-xxl        : calc(var(--text-xl) * var(--text-scale-ratio));
+     --text-xxxl       : calc(var(--text-xxl) * var(--text-scale-ratio));
+     --text-display-1  : calc(var(--text-xxxl) * var(--text-scale-ratio));
+     --text-display-2  : calc(var(--text-display-1) * var(--text-scale-ratio));
+     --text-display-3  : calc(var(--text-display-2) * var(--text-scale-ratio));
+ 
+     /* default button height
+      */
+     --vspace-btn: var(--vspace-2);
+ }
+ 
+ /* on mobile devices below 600px
+  */
+ @media screen and (max-width: 600px) {
+     :root {
+         --base-font-size: 1.6rem;
+         --space: 2.8rem;
+     }
+ }
+ 
+
+/* ------------------------------------------------------------------- 
+ * ## colors
+ * ------------------------------------------------------------------- */
+ :root {/*
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 30%);
+    /*----------------------------------lftbtm---rightbtm
+    clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+    */
+    /* color-1(#11ABB0)
+     * color-2(#F06000)
+     */
+    --color-1: hsla(182, 82%, 38%, 1);
+    --color-2: hsla(24, 100%, 47%, 1);
+
+    /* theme color variations
+     */
+    --color-primary: #ee6352;
+    --color-accent: #F7F7FF;
+    --color-secondary: #d16e8d;
+    --color-1-lighter: hsla(182, 82%, 58%, 1);
+    --color-1-light  : hsla(182, 82%, 48%, 1);
+    --color-1-dark   : hsla(182, 82%, 28%, 1);
+    --color-1-darker : hsla(182, 82%, 18%, 1);
+    --color-2-lighterer: rgba(255, 154, 87, 0.863);
+    --color-2-lighter: hsla(24, 100%, 67%, 1);
+    --color-2-light  : hsla(24, 100%, 57%, 1);
+    --color-2-dark   : hsla(24, 100%, 37%, 1);
+    --color-2-darker : hsla(24, 100%, 27%, 1);
+
+    /* feedback colors
+     * color-error(#ffd1d2), color-success(#c8e675), 
+     * color-info(#d7ecfb), color-notice(#fff099)
+     */
+    --color-error          : hsla(359, 100%, 91%, 1);
+    --color-success        : hsla(76, 69%, 68%, 1);
+    --color-info           : hsla(205, 82%, 91%, 1);
+    --color-notice         : hsla(51, 100%, 80%, 1);
+    --color-error-content  : hsla(359, 50%, 50%, 1);
+    --color-success-content: hsla(76, 29%, 28%, 1);
+    --color-info-content   : hsla(205, 32%, 31%, 1);
+    --color-notice-content : hsla(51, 30%, 30%, 1);
+
+    /* shades 
+     */
+    --color-black  : #000000;
+    --color-gray-19: #0a0a0a;
+    --color-gray-18: #141414;
+    --color-gray-17: #1e1e1e;
+    --color-gray-16: #282828;
+    --color-gray-15: #323333;
+    --color-gray-14: #3b3d3d;
+    --color-gray-13: #454747;
+    --color-gray-12: #4f5151;
+    --color-gray-11: #595b5b;
+    --color-gray-10: #636565;
+    --color-gray-9 : #737474;
+    --color-gray-8 : #828484;
+    --color-gray-7 : #929393;
+    --color-gray-6 : #a1a3a3;
+    --color-gray-5 : #b1b2b2;
+    --color-gray-4 : #c1c1c1;
+    --color-gray-3 : #d0d1d1;
+    --color-gray-2 : #e0e0e0;
+    --color-gray-1 : #eff0f0;
+    --color-white  : #ffffff;
+
+    /* text
+     */
+    --color-text       : var(--color-gray-16);
+    --color-text-dark  : var(--color-black);
+    --color-text-light : var(--color-gray-7);
+    --color-placeholder: var(--color-gray-7);
+
+    /* buttons
+     */
+    --color-btn                   : var(--color-gray-3);
+    --color-btn-text              : var(--color-black);
+    --color-btn-hover             : var(--color-black);
+    --color-btn-hover-text        : var(--color-white);
+    --color-btn-primary           : var(--color-1);
+    --color-btn-primary-text      : var(--color-white);
+    --color-btn-primary-hover     : var(--color-2);
+    --color-btn-primary-hover-text: var(--color-white);
+    --color-btn-stroke            : var(--color-black);
+    --color-btn-stroke-text       : var(--color-black);
+    --color-btn-stroke-hover      : var(--color-black);
+    --color-btn-stroke-hover-text : var(--color-white);
+
+    /* others
+     */
+    --color-bg     : var(--color-gray-18);
+    --color-border : var(--color-gray-2);
+    --border-radius: 5px;
+}
+
+
+/* 
+ * ------------------------------------------------------------------- 
+ * ## body
+ * ------------------------------------------------------------------- 
+*/
+
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    justify-content: center;
+    align-items:center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* 
+ * ------------------------------------------------------------------- 
+ * ## header
+ * ------------------------------------------------------------------- 
+*/
+
+header {
+    background: rgba(40, 40, 40, 0);
+    display: flex;
+    width: 100%;
+    line-height: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+header.offset {
+    transform: translateY(-100);
+    -webkit-transform: translateY(-100);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+header.scrolled {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+/* 
+ * ------------------------------------------------------------------- 
+ * ## logo - join
+ * ------------------------------------------------------------------- 
+*/
+
+.logo_button {
+    display: inline-block;
+    padding: 0 55px;
+    cursor: pointer;
+    transition: all .35s ease-in-out;
+}
+
+.logo_button:hover {
+    filter: invert(1);
+}
+
+.logo {
+    width:  60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 2px white;
+}
+
+.discord-link{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    line-height: 3rem;
+    background: rgb(0, 98, 255);
+    padding: 0 20px;
+    position: relative;
+    right: 10px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out
+}
+
+.discord-link img{
+    width:  27px;
+    height: 19px ;
+    position: relative;
+    top: .2rem;
+    right: .5rem;
+    transition: all .35s ease-in-out;
+}
+
+.discord-link:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+
+.discord-link:hover img{
+    filter: invert(1);
+}
+
+/* 
+ * ------------------------------------------------------------------- 
+ * ## nav bar
+ * ------------------------------------------------------------------- 
+*/
+
+.header-nav {
+    font-family: var(--font-1);
+    letter-spacing: 1.5px;
+    font-size: .95rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    position: inherit;
+    line-height: 5rem;
+    top: 2rem;
+}
+
+
+.header-nav ul{
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.header-nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 1.2rem;
+}
+
+
+.header-nav a{
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    line-height: 2rem;
+    padding: .8rem;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.header-nav a:hover{
+    background: white ;
+    border-radius: 25px;
+    color: #000000;
+}
+
+.header-nav .current a{
+    color: rgb(120, 2, 162);
+}
+
+/* 
+ * ------------------------------------------------------------------- 
+ * ## hero
+ * ------------------------------------------------------------------- 
+*/
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero_bg{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/pixel-jeff-clipa-s.gif);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.hero_bg::before{
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .4;
+}
+.hero_bg::before{
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, black 15%, rgba(0, 0, 0, 0));
+    opacity: .6;
+}
+
+
+/* 
+ * ------------------------------------------------------------------- 
+ * ## hero_content
+ * ------------------------------------------------------------------- 
+*/
+
+.hero_content{
+    height: 100%;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 16vh;
+    padding-bottom: 12vh;
+    position: relative;
+    top: 6rem;
+}
+
+.hero_content h1{
+    font-size: 6.8rem;
+    font-family: var(--font-1);
+    font-weight: 600;
+    letter-spacing: -.04em;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.hero_content h3{
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: var(--vspace-1);
+    width:50%;
+    color: rgb(237, 236, 236);
+    position: relative;
+    top: 4rem;
+    left: 25%;
+}
