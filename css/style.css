@@ -242,11 +242,13 @@ html {
 
 body {
     margin: 0;
+    height: 100%;
     justify-content: center;
     align-items:center;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 
 ::-webkit-scrollbar{
     display: none;
@@ -311,7 +313,7 @@ header.scrolled {
     width:  60px;
     height: 60px;
     border-radius: 50%;
-    border: solid 2px white;
+    border: solid 2px rgb(255, 255, 255);
 }
 
 .discord-link{
@@ -397,7 +399,7 @@ header.scrolled {
 }
 
 .header-nav .current a{
-    color: rgb(120, 2, 162);
+    color: rgb(162, 2, 2);
 }
 
 /* 
@@ -416,18 +418,470 @@ header.scrolled {
 
 .hero_bg{
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: #123 url(../images/pixel-jeff-clipa-s.gif);
+    background: #123 url(../images/New_Folder/0013.png);
     background-position: center;
     background-size: cover;
     z-index: -1;
 }
+
+
+.scroll1{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0014.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll2{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0015.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll3{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0016.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll4{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0017.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll5{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0018.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll6{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0019.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll7{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0020.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll8{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0021.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll9{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0022.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll10{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0023.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll11{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0024.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll12{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0025.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll13{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0026.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll14{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0027.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll15{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0028.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll16{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0029.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll17{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0030.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll18{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0031.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll19{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0032.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll20{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0033.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll21{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0034.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll22{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0035.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll23{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0036.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll24{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0037.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll25{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0038.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll26{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0039.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll27{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0040.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll28{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0041.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll29{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0042.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.scroll30{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #123 url(../images/New_Folder/0043.png);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
 .hero_bg::before{
     display: block;
     content: "";
@@ -469,7 +923,7 @@ header.scrolled {
     padding-top: 16vh;
     padding-bottom: 12vh;
     position: relative;
-    top: 6rem;
+    top: 12rem;
 }
 
 .hero_content h1{
@@ -494,4 +948,43 @@ header.scrolled {
     position: relative;
     top: 4rem;
     left: 25%;
+}
+
+/* 
+ * ------------------------------------------------------------------- 
+ * ## hero_content
+ * ------------------------------------------------------------------- 
+*/
+
+.about {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.about_bg{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(24, 24, 24, 0.431);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.about .row {
+    display: flex;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-box-flex: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 12vh 0;
 }
